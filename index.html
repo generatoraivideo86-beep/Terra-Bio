@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Hello World! </h1>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+  </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerraBio - The Future of High-Yield Biological Agriculture</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F5F8F4; /* Creamy Off-white */
+            color: #1A1A1A;
+        }
+        .bio-primary {
+            background-color: #1E6542; /* Deep Forest Green */
+        }
+        .bio-primary-text {
+            color: #1E6542;
+        }
+        .bio-accent {
+            color: #D4AF37; /* Subtle Gold/Brass */
+        }
+        .bio-dark-bg {
+            background-color: #0A1C12; /* Near Black/Darkest Green */
+        }
+        .bio-card-shadow {
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        .hero-bg {
+            /* Using a high-contrast placeholder for premium feel */
+            background-image: url('https://placehold.co/1600x800/0A1C12/F5F8F4?text=Molecular+Precision+in+Agriculture');
+            background-size: cover;
+            background-position: center;
+        }
+        /* Mobile menu control */
+        .mobile-menu-open {
+            display: flex !important;
+        }
+        .premium-border {
+            border: 2px solid #D4AF37;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bio-dark-bg text-white shadow-xl">
+        <div class="max-w-7xl mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-3xl font-extrabold text-white">
+                Terra<span class="bio-accent">Bio</span>
+            </h1>
+            
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-8 text-lg font-medium items-center">
+                <a href="#advantage" class="hover:text-[#D4AF37] transition duration-300">The Science</a>
+                <a href="#solutions" class="hover:text-[#D4AF37] transition duration-300">Solutions</a>
+                <a href="#roi" class="hover:text-[#D4AF37] transition duration-300">Why Invest?</a>
+                <a href="#contact" class="px-6 py-2 bg-[#D4AF37] text-[#0A1C12] rounded-full hover:bg-opacity-90 transition duration-300 font-semibold shadow-lg">Request Analysis</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Drawer (Hidden by default) -->
+        <div id="mobile-menu" class="hidden flex-col bio-dark-bg p-4 md:hidden">
+            <a href="#advantage" class="block p-3 text-white hover:text-[#D4AF37] transition duration-300 rounded-lg">The Science</a>
+            <a href="#solutions" class="block p-3 text-white hover:text-[#D4AF37] transition duration-300 rounded-lg">Solutions</a>
+            <a href="#roi" class="block p-3 text-white hover:text-[#D4AF37] transition duration-300 rounded-lg">Why Invest?</a>
+            <a href="#contact" class="block p-3 mt-2 bg-[#D4AF37] text-[#0A1C12] rounded-lg text-center font-bold">Request Analysis</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-[90vh] flex items-center justify-center text-center p-6" id="home">
+        <div class="bg-black bg-opacity-70 p-8 md:p-16 rounded-3xl max-w-5xl premium-border shadow-2xl">
+            <h2 class="text-5xl md:text-7xl font-black text-white leading-tight mb-4 tracking-tight">
+                Precision Biofarming. <span class="bio-accent block mt-2">Sustainable Profitability.</span>
+            </h2>
+            <p class="text-xl md:text-2xl text-gray-300 font-light mb-10">
+                We utilize microbial sciences to drive superior elemental conversion, maximizing yield and long-term soil health.
+            </p>
+            <a href="#advantage" class="px-10 py-4 bio-primary text-white text-xl font-bold rounded-full hover:bg-opacity-80 transition duration-300 transform hover:scale-105 inline-block shadow-xl">
+                Explore The Molecular Advantage
+            </a>
+        </div>
+    </section>
+
+    <!-- The Molecular Advantage / Science Section -->
+    <section id="advantage" class="py-20 md:py-32 bio-dark-bg text-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <span class="text-lg font-semibold bio-accent uppercase tracking-widest">Our Scientific Edge</span>
+            <h3 class="text-4xl md:text-5xl font-extrabold mb-16 mt-3">
+                Molecular Bio-Activation and Elemental Conversion
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Mechanism 1: Nitrogen Fixation -->
+                <div class="bg-[#1e1e1e] p-8 rounded-xl bio-card-shadow border-t-4 border-[#1E6542] transition transform hover:shadow-2xl duration-300">
+                    <div class="text-5xl mb-4 bio-accent">N</div>
+                    <h4 class="text-2xl font-bold mb-3">Atmospheric Nitrogen Fixation</h4>
+                    <p class="text-gray-400 mb-4 text-base">
+                        Our specialized microbes (Rhizobium, Azotobacter) capture inert atmospheric N and convert it directly into accessible ammonia ($\text{NH}_3$).
+                    </p>
+                    <p class="text-lg font-black mt-4 bio-primary-text bg-gray-100 py-1 rounded-md text-[#0A1C12]">Rate: $\sim$50-200 kg N/ha</p>
+                </div>
+
+                <!-- Mechanism 2: Phosphorus Solubilization -->
+                <div class="bg-[#1e1e1e] p-8 rounded-xl bio-card-shadow border-t-4 border-[#1E6542] transition transform hover:shadow-2xl duration-300">
+                    <div class="text-5xl mb-4 bio-accent">P</div>
+                    <h4 class="text-2xl font-bold mb-3">Locked-P Mobilization</h4>
+                    <p class="text-gray-400 mb-4 text-base">
+                        PSB and PSF release organic acids that chelate fixed soil phosphorus, solubilizing $P$ and dramatically improving root absorption capacity.
+                    </p>
+                    <p class="text-lg font-black mt-4 bio-primary-text bg-gray-100 py-1 rounded-md text-[#0A1C12]">Key for Root Vigor & Vetting</p>
+                </div>
+
+                <!-- Mechanism 3: Symbiotic Absorption -->
+                <div class="bg-[#1e1e1e] p-8 rounded-xl bio-card-shadow border-t-4 border-[#1E6542] transition transform hover:shadow-2xl duration-300">
+                    <div class="text-5xl mb-4 bio-accent">💧</div>
+                    <h4 class="text-2xl font-bold mb-3">Mycorrhizal Absorption Network</h4>
+                    <p class="text-gray-400 mb-4 text-base">
+                        Mycorrhiza creates a vast fungal network ($\sim$30x root length), enhancing water and micronutrient (Zn, S) uptake, significantly reducing drought stress.
+                    </p>
+                    <p class="text-lg font-black mt-4 bio-primary-text bg-gray-100 py-1 rounded-md text-[#0A1C12]">Uptake Boost: 30% - 50%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions/Products Section -->
+    <section id="solutions" class="py-16 md:py-24 max-w-7xl mx-auto px-6 text-center">
+        <span class="text-lg font-semibold bio-primary-text uppercase tracking-widest">Targeted Formulations</span>
+        <h3 class="text-4xl md:text-5xl font-extrabold mb-12 text-[#0A1C12]">
+            Our High-Efficacy Bio-Products
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Solution 1: Nitrogen Fixers -->
+            <div class="bg-white p-6 rounded-xl bio-card-shadow transition transform hover:translate-y-[-4px] duration-300 border-b-4 border-[#1E6542]">
+                <h4 class="text-2xl font-bold mb-3 bio-primary-text">N-Fix Consortia</h4>
+                <p class="text-gray-600 mb-4 text-sm">
+                    A blend of **Azotobacter** and **Rhizobium** strains engineered for maximum nitrogen availability in diverse crop rotations.
+                </p>
+                <span class="text-lg font-black block bio-accent">Essential Green Vigor</span>
+            </div>
+
+            <!-- Solution 2: P-Solubilizers -->
+            <div class="bg-white p-6 rounded-xl bio-card-shadow transition transform hover:translate-y-[-4px] duration-300 border-b-4 border-[#1E6542]">
+                <h4 class="text-2xl font-bold mb-3 bio-primary-text">P-Lock Mobilizer</h4>
+                <p class="text-gray-600 mb-4 text-sm">
+                    High-count PSB/PSF formulation ensuring the efficient release of soil-bound phosphorus for foundational root development.
+                </p>
+                <span class="text-lg font-black block bio-accent">Root System Optimization</span>
+            </div>
+
+            <!-- Solution 3: Mycorrhiza -->
+            <div class="bg-white p-6 rounded-xl bio-card-shadow transition transform hover:translate-y-[-4px] duration-300 border-b-4 border-[#D4AF37]">
+                <h4 class="text-2xl font-bold mb-3 bio-primary-text">Myco-Max Defense</h4>
+                <p class="text-gray-600 mb-4 text-sm">
+                    Highly potent **VAM (Vesicular Arbuscular Mycorrhiza)** designed to boost nutrient and water scavenging efficiency by up to 50%.
+                </p>
+                <span class="text-lg font-black block bio-primary-text">Drought Resilience</span>
+            </div>
+
+            <!-- Solution 4: NPK Consortia -->
+            <div class="bg-white p-6 rounded-xl bio-card-shadow transition transform hover:translate-y-[-4px] duration-300 border-b-4 border-[#1E6542]">
+                <h4 class="text-2xl font-bold mb-3 bio-primary-text">Triple-Action NPK Blend</h4>
+                <p class="text-gray-600 mb-4 text-sm">
+                    A comprehensive consortia including KMB and ZSB for holistic macro- and micronutrient balancing in all crop types.
+                </p>
+                <span class="text-lg font-black block bio-accent">Complete Elemental Balance</span>
+            </div>
+        </div>
+        
+        <a href="#contact" class="mt-16 px-8 py-3 bio-primary text-white text-xl font-bold rounded-full hover:opacity-90 transition duration-300 inline-block shadow-lg">
+            View Technical Data Sheets
+        </a>
+    </section>
+
+    <!-- ROI / Why Invest Section -->
+    <section id="roi" class="py-16 md:py-24 bio-primary text-white">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="text-lg font-semibold text-[#D4AF37] uppercase tracking-widest">Investment & Future-Proofing</span>
+                <h3 class="text-4xl md:text-5xl font-extrabold leading-tight">
+                    Sustainable ROI: Beyond Yield, Achieve Resilience.
+                </h3>
+                <ul class="space-y-4 text-gray-200 text-lg list-disc pl-6">
+                    <li>**Profit Margin:** Significant reduction in synthetic fertilizer costs year-over-year.</li>
+                    <li>**Product Quality:** Improved color, size, and shelf-life, commanding premium market prices.</li>
+                    <li>**Risk Mitigation:** Enhanced plant immunity and stress tolerance against climate volatility.</li>
+                    <li>**Asset Preservation:** Long-term improvement of soil structure and biological activity.</li>
+                </ul>
+                <p class="text-[#D4AF37] text-lg font-semibold pt-4">
+                    Our solutions are a strategic investment, not an annual expense.
+                </p>
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-2xl premium-border">
+                <img src="https://placehold.co/600x400/38a169/FFFFFF?text=High-Value+Produce+Showcase" alt="High-quality bio-farm produce" class="w-full h-auto object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/CTA Section -->
+    <section id="contact" class="py-16 md:py-24 bg-[#F5F8F4]">
+        <div class="max-w-xl mx-auto px-6 text-center">
+            <h3 class="text-4xl md:text-5xl font-extrabold mb-4 text-[#0A1C12]">
+                Initiate a Portfolio Review
+            </h3>
+            <p class="text-xl mb-8 text-gray-700">
+                Contact our specialized agronomy team for a detailed analysis of your soil and crop needs.
+            </p>
+
+            <!-- Simple Contact Form (Simulated) -->
+            <div class="bg-white p-8 rounded-2xl bio-card-shadow text-[#0A1C12] border-t-8 border-[#D4AF37]">
+                <form onsubmit="handleContact(event)">
+                    <div class="mb-4">
+                        <input type="text" id="name" placeholder="Your Name" required class="w-full p-4 border border-gray-300 rounded-lg focus:ring-[#1E6542] focus:border-[#1E6542]">
+                    </div>
+                    <div class="mb-6">
+                        <input type="email" id="email" placeholder="Professional Email Address" required class="w-full p-4 border border-gray-300 rounded-lg focus:ring-[#1E6542] focus:border-[#1E6542]">
+                    </div>
+                    <button type="submit" class="w-full py-4 bio-dark-bg text-white text-lg font-bold rounded-full hover:opacity-90 transition duration-300 transform hover:scale-105 shadow-xl">
+                        Schedule Expert Consultation
+                    </button>
+                    <p id="contact-message" class="mt-4 text-center text-sm font-semibold hidden text-[#1E6542]"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-900 text-center text-gray-400">
+        <p>&copy; 2025 TerraBio Global. Intellectual Property of Biological Systems. | Built for Canvas.</p>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu and Form Submission -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = mobileMenu.querySelectorAll('a');
+
+            // 1. Toggle mobile menu visibility
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('mobile-menu-open');
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // 2. Close mobile menu when a link is clicked
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('mobile-menu-open');
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // 3. Simple form submission handler (since we cannot use a real backend)
+            window.handleContact = function(event) {
+                event.preventDefault();
+                const name = document.getElementById('name').value;
+                const messageBox = document.getElementById('contact-message');
+
+                messageBox.classList.remove('hidden');
+                messageBox.textContent = `Thank you, ${name}. Your request for an expert review has been received. Our team will contact you shortly.`;
+
+                // Hide the message after 5 seconds
+                setTimeout(() => {
+                    messageBox.classList.add('hidden');
+                }, 5000);
+            }
+        });
+    </script>
+</body>
+</html>
